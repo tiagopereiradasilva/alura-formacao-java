@@ -1,16 +1,18 @@
 package bytebank.teste;
 
-import bytebank.dominio.Funcionario;
+import bytebank.dominio.Gerente;
 
 public class Teste01 {
 
 	public static void main(String[] args) {
-		Funcionario niko = new Funcionario();
-		niko.setNome("Niko");
-		niko.setCpf("01012020-7");
-		niko.setSalario(100000);
 		
-		System.out.println(niko.getBonificacao());
+		Gerente gerente = new Gerente();
+		gerente.setNome("Fallen");
+		gerente.setCpf("01012020-7");
+		gerente.setSalario(100000);
+		gerente.setSenha("pass");
+		System.out.println("Gerente autenticado: "+gerente.autenticar("pass"));
+		System.out.println("Bonificação: "+gerente.getBonificacao());
 	}
 
 }
