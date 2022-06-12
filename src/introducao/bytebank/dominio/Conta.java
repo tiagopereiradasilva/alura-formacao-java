@@ -5,8 +5,21 @@ public class Conta {
     private int numero;
     private Titular titular;
     private double saldo;
+    
+    public static int totalContas = 0;
+    
+    
+    public Conta(int agencia, int numero, Titular titular, double saldo) {
+    	
+		this.agencia = agencia;
+		this.numero = numero;
+		this.titular = titular;
+		this.saldo = saldo;
+		
+		totalContas++;
+	}
 
-    @Override
+	@Override
     public String toString() {
         return "Conta{" +
                 "agencia=" + agencia +
