@@ -10,7 +10,7 @@ public class Teste01 {
         titular.setCpf("11111111111");
         titular.setProfissao("Desenvolvedor Java");
 
-        Conta conta = new Conta();
+        Conta conta = new Conta(001, 002, titular, 1000.0);
         conta.setTitular(titular);
 
         System.out.println(conta);
