@@ -6,7 +6,7 @@ import introducao.bytebank.dominio.Titular;
 public class Teste01 {
     public static void main(String[] args) {
         Titular titular = new Titular();
-        titular.setNome("Tiago Pereira");
+        titular.setNome("Ana Maria");
         titular.setCpf("11111111111");
         titular.setProfissao("Desenvolvedor Java");
 
