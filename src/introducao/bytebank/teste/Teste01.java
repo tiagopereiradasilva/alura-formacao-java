@@ -10,9 +10,11 @@ public class Teste01 {
         titular.setCpf("11111111111");
         titular.setProfissao("Desenvolvedor Java");
 
-        Conta conta = new Conta(001, 002, titular, 1000.0);
-        conta.setTitular(titular);
-
-        System.out.println(conta);
+        Conta conta = new Conta(001, 002, titular, 1000.0);        
+        
+        Conta conta2 = new Conta(001, 002, titular, 1000.0);
+        
+        
+        System.out.println("Total de contas: "+Conta.totalContas);
     }
 }

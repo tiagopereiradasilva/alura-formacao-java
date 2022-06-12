@@ -6,6 +6,7 @@ public class Conta {
     private Titular titular;
     private double saldo;
     
+    public static int totalContas = 0;
     
     
     public Conta(int agencia, int numero, Titular titular, double saldo) {
@@ -14,6 +15,8 @@ public class Conta {
 		this.numero = numero;
 		this.titular = titular;
 		this.saldo = saldo;
+		
+		totalContas++;
 	}
 
 	@Override
