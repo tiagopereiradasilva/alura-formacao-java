@@ -10,8 +10,14 @@ public class ContaCorrente extends Conta{
 	public boolean saca(double valor) {
 		return super.saca(valor+VALOR_TAXA_SAQUE);
 	}
+
+	@Override
+	public void deposita(double valor) {
+		super.saldo+=valor;
+		
+	}
 	
-	//implementando nova regra de negócio para sacar com conta corrente.
+	
 	
 
 }
