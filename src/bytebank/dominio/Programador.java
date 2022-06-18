@@ -4,7 +4,7 @@ public class Programador extends Funcionario {
 
 	@Override
 	public double getBonificacao() {
-		return super.getSalario() * 0.2;
+		return 1000.0;
 	}
 	
 }

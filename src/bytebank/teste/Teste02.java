@@ -10,10 +10,10 @@ public class Teste02 {
 	public static void main(String[] args) {
 		
 		Gerente gerente = new Gerente();
-		gerente.setSalario(1000); // 1100 - bonificacao
+		gerente.setSalario(10000); // 1100 - bonificacao
 		
-		Funcionario funcionario = new Funcionario();
-		funcionario.setSalario(1000); // 100 - bonificacao
+		//Funcionario funcionario = new Funcionario();
+		//funcionario.setSalario(1000); // 100 - bonificacao
 		
 		Programador programador = new Programador();
 		programador.setSalario(1000); // 200 - bonificacao
@@ -21,7 +21,6 @@ public class Teste02 {
 		ControleBonificacaoServico cb = new ControleBonificacaoServico();
 		
 		cb.registrarBonificacao(gerente);
-		cb.registrarBonificacao(funcionario);
 		cb.registrarBonificacao(programador);
 		
 		System.out.println(cb.getSomabonificacoes());
